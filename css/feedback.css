@@ -14,7 +14,10 @@ main{
 	background-color: black;
 	border-top: 2px solid green;
 	border-bottom: 2px solid green;
-	padding: 3%;
+}
+
+main section{
+	text-align: center;
 }
 
 header {      
