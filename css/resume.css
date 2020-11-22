@@ -130,13 +130,19 @@ footer img{
 	color: white;
 }
 
-main h1{
+main{
 	text-align: center;
 }
 
-main img{
+main section img{
 	display: block;
   	margin-left: auto;
-  	margin-right: auto;
-  	width: 70%;
+  	margin-right: auto;	
+	width: 85%;
+	padding-bottom: 20px;
+}
+
+
+main section{
+	display: inline-block;
 }
