@@ -16,8 +16,13 @@ main{
 	border-bottom: 2px solid green;
 }
 
-main section{
+#center{
 	text-align: center;
+}
+
+iframe {
+	border-radius: 40px;
+	padding: 1s0px;
 }
 
 header {      
