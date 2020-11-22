@@ -22,7 +22,7 @@ main{
 
 input[type=text] {
  	width: 100%;
-  	margin: 5px;
+ 	margin-bottom: 10px; 
   	color: blue;
   	border-radius: 10px;
 }
@@ -140,11 +140,11 @@ footer img{
 	iframe {
 		border-radius: 40px;
 		padding: 10px;
-		width: 100%;
+		width: 95%;
 	}
 
 	input[type=text] {
- 		width: 100%;
+ 		width: 95%;
   		margin: 5px;
   		padding-right: 5px;
   		color: blue;
