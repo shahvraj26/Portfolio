@@ -73,13 +73,17 @@ footer img{
 		margin-right: auto;
 		font-family: Consolas,monaco,monospace; 
 	}
-	
+
 	html{
 		font-size: 13px;
 	}
 
+	header{
+		padding-right: 35px;
+	}
+
 	header ul li{
-		margin-left: -40px; 
+		margin-left: -20px; 
 		text-align: center;
 		list-style-type: none;
 	}
