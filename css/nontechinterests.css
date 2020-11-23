@@ -141,6 +141,10 @@ footer img{
 
 	}
 
+	main section video {
+		width: 50%;
+	}
+
 }
 
 #purple{
@@ -181,4 +185,8 @@ main{
 	padding-bottom: 10px; 
 	background-color: black;
 	border-bottom: 2px solid red;
+}
+
+main section video{
+	width: 60.3%;
 }
