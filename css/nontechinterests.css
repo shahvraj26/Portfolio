@@ -141,10 +141,6 @@ footer img{
 
 	}
 
-	main section video {
-		width: 50%;
-	}
-
 }
 
 #purple{
@@ -189,4 +185,11 @@ main{
 
 main section video{
 	width: 60.3%;
+}
+
+video{
+	display: block;
+    padding-bottom: 2%;
+    width: 65%;
+    margin: auto;
 }
