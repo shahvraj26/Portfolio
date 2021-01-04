@@ -133,3 +133,24 @@ footer img{
 .red{
 	color: purple;
 }
+
+main{
+	text-align: center;
+
+}
+
+main section img{
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;	
+	width: 85%;
+	padding-bottom: 10px;
+	border-radius: 25px;
+	column-count: 3;
+}
+
+
+main section{
+	display: inline-block;
+
+}
