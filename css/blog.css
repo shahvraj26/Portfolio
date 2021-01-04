@@ -158,6 +158,10 @@ main form{
 		padding-bottom: 20px;
 	}
 
+	main form{
+		text-align: center;
+	}
+
 	footer img{
 		display: none;
 	}
