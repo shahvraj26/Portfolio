@@ -65,6 +65,56 @@ footer img{
 	float: right;
 }
 
+#purple{
+	color: purple;
+}
+
+#green{
+	color: green;
+}
+
+#white {
+	color: white;
+}
+
+.red{
+	color: purple;
+}
+
+main{
+	text-align: center;
+	font-size: 20px;
+}
+
+#displayl{ 
+	display: inline-block;
+	width: 70%;
+  	font-size: 20px;
+}
+
+#displayr{ 
+	display: inline-block;
+	width: 70%;
+	font-size: 20px;
+
+}
+
+#back{
+	padding-bottom: 10px; 
+	background-color: black;
+	border-bottom: 2px solid red;
+}
+
+main section video{
+	width: 50%;
+}
+
+video{
+	display: block;
+    padding-bottom: 2%;
+    margin: auto;
+}
+
 @media screen and (max-width: 600px) {
 
 	body{
@@ -128,6 +178,10 @@ footer img{
 		width: 95%;
 	}
 
+	main section video{
+		width: 90%;
+	}
+
 	#displayl{ 
 		display: inline-block;
 		width: 70%;
@@ -141,54 +195,4 @@ footer img{
 
 	}
 
-}
-
-#purple{
-	color: purple;
-}
-
-#green{
-	color: green;
-}
-
-#white {
-	color: white;
-}
-
-.red{
-	color: purple;
-}
-
-main{
-	text-align: center;
-	font-size: 20px;
-}
-
-#displayl{ 
-	display: inline-block;
-	width: 70%;
-  	font-size: 20px;
-}
-
-#displayr{ 
-	display: inline-block;
-	width: 70%;
-	font-size: 20px;
-
-}
-
-#back{
-	padding-bottom: 10px; 
-	background-color: black;
-	border-bottom: 2px solid red;
-}
-
-main section video{
-	width: 85.3%;
-}
-
-video{
-	display: block;
-    padding-bottom: 2%;
-    margin: auto;
 }
