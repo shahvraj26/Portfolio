@@ -85,6 +85,30 @@ footer img{
 	float: right;
 }
 
+#purple{
+	color: purple;
+}
+
+#green{
+	color: green;
+}
+
+#white {
+	color: white;
+}
+
+#blue{
+	color: blue;
+}
+
+.red{
+	color: purple;
+}
+
+#display{
+	display: none;
+}
+
 @media screen and (max-width: 600px) {
 
 	body{
@@ -128,6 +152,13 @@ footer img{
 		border-right: 2px solid black;
 	}
 
+	#display{
+		display: inline-block;
+		text-align: center;
+		border: 2px solid red;
+  		width: 180px;
+	}
+
 	footer{
 		text-align: center;
 		padding-left: 0px; 
@@ -150,24 +181,4 @@ footer img{
   		color: blue;
   		border-radius: 10px;
 	}
-}
-
-#purple{
-	color: purple;
-}
-
-#green{
-	color: green;
-}
-
-#white {
-	color: white;
-}
-
-#blue{
-	color: blue;
-}
-
-.red{
-	color: purple;
 }
