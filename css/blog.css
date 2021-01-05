@@ -115,7 +115,7 @@ main form{
 	}
 
 	html{
-		font-size: 13px;
+		font-size: 15px;
 	}
 
 	header{
@@ -135,7 +135,7 @@ main form{
 
 	nav ul li a{
 		padding: 10px;
-		font-size: 10px;
+		font-size: 13px;
 		text-decoration: none;
 	}
 
