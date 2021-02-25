@@ -105,6 +105,13 @@ main img{
 	border-radius: 25px;
 }
 
+#text{
+	text-align: left;
+}
+
+#blue{
+	color: blue;
+}
 
 @media screen and (max-width: 800px) {
 
