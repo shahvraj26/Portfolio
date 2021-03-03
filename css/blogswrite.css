@@ -65,7 +65,17 @@ footer img{
 	float: right;
 }
 
+#purple:hover{
+	color: #D3D3D3;
+}
 
+#white:hover{
+	color: #D3D3D3;
+}
+
+#green:hover{
+	color: #D3D3D3;
+}
 
 #purple{
 	color: purple;
