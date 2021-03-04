@@ -100,8 +100,9 @@ footer img{
   padding: 10px;
 }
 
-#transbox:hover {
-	background-color: grey;
+#awe{
+	float: right;
+	padding: 10px;
 }
 
 main{
@@ -113,6 +114,10 @@ main{
 	display: inline-block;
 	width: 70%;
   	font-size: 20px;
+}
+
+div{
+	padding: 10px;
 }
 
 #displayr{ 
