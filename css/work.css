@@ -154,6 +154,11 @@ footer img{
 	text-align: center;
 }
 
+#awe{
+	float: right;
+	padding: 10px;
+}
+
 #transbox {
   color: white;
   border: 2px solid white;
