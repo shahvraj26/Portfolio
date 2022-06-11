@@ -117,7 +117,7 @@ main{
 #displayl{ 
 	display: inline-block;
 	width: 70%;
-  	font-size: 20px;
+  font-size: 20px;
 }
 
 div{
@@ -128,7 +128,6 @@ div{
 	display: inline-block;
 	width: 70%;
 	font-size: 20px;
-
 }
 
 #back{
@@ -242,14 +241,13 @@ video{
 	#displayl{ 
 		display: inline-block;
 		width: 90%;
-  		font-size: 20px;
+  	font-size: 20px;
 	}
 
 	#displayr{ 
 		display: inline-block;
 		width: 100%;
 		font-size: 20px;
-
 	}
 }
 
