@@ -169,6 +169,7 @@ footer img{
 #awe{
 	float: right;
 	padding: 10px;
+	border-radius: 20px 20px 20px 20px;
 }
 
 #transbox {
