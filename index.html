@@ -1,103 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>    
-    <title>| Home</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Noto+Sans+JP&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <script type="text/javascript" src="scripts/drop.js"></script>
-  </head>  
-  <body>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>| Home</title>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	
+	<!--CSS Links--->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+	
+	<!--boxicon links--->
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	
+	<!--remixicon links--->
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">  
+	
+	<!--Google Fonts--->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400&display=swap" rel="stylesheet">
+</head>
 
-    <header>
-      <ul>
-        <li>   
-          <a href="index.html" id="background">
-            <img src="images/logo.png" alt="Home Button" >
-          </a>
-        </li>
+<body>
+	
+	<header id="transparent">
+		<a href="index.html" class="logo">shahvraj26</a>
+		
+		<ul class="navlist">
+			<li><a id="colorStay" href="index.html">Home</a></li>
+			<li><a href="interests.html">Skills</a></li>
+			<li><a href="work.html">Work</a></li>
+			<li><a href="contact.html">Connect</a></li>
+		</ul>
+		
+		<div class="bx bx-menu" id="menu-icon"></div>
+	</header> 
+	
+	<section class="hero">
+		<div class="hero-text">
+			<h1 id="center">Welcome To My <span id="colorStay">Portfolio!</span></h1>
+			<p><span id="fontsize">Hello. My name is Vraj Shah</span>, and I am a junior at The Ohio State University pursuing a degree in Computer Science and Engineering. 
+			Beyond the world of coding, I find joy in exploring diverse passions such as cooking, playing the piano, and spending quality time with friends. 
+			To get a deeper insight into my work, please check out the "Work" and "Skills" tabs above. 
+			If you want to connect, feel free to reach out through the connect section, and don't forget to take a peek at my resume using the buttons provided below. 
+			Let's embark on this journey together!</p>
+			<a href="contact.html" class="ctaa"><i class="ri-contacts-line"></i>Connect</a>
+			<a target="_blank" href="college_resume.pdf" class="ctaa"><i class="ri-file-pdf-line"></i></i>Download Resume</a>
+		</div>
+		
+		<div class="hero-image">
+			<img src="images/vraj.png">
+		</div>
+	</section>
+	
+	<div class="icons">
+		<a target="_blank" href="https://www.instagram.com/shahvraj26/"><i class="ri-instagram-line"></i><a>
+		<a target="_blank" href="https://www.linkedin.com/in/shahvraj26/"><i class="ri-linkedin-fill"></i><a>
+		<a target="_blank" href="https://github.com/shahvraj26"><i class="ri-github-fill"></i><a>
+		<a target="_blank" href="mailto:shahvraj26@gmail.com"><i class="ri-mail-line"></i></a>
+	</div>
+	
+	<div class="footer">
+		<p>2023 made by Vraj Shah</p>
+	</div>
+	
+	<!--ScrollReveal script-->
+	<script src="https://unpkg.com/scrollreveal"></script>
+	
+	<!--custom js--->
+	<script src="js/script.js"></script>
+	<script src="js/scroll.js"></script>
 
-        <li>
-          <a href="index.html" >
-            <h1><span id="purple">print</span><span id="white">(</span><span id="green">"Vraj Shah"</span><span id="white">)</span></h1>
-          </a>
-        </li>  
-      </ul>
-    </header>  
+</body>
 
-    <nav>
-      <ul>
-        <li>
-          <a href="resume.html" id="border">Resume</a>
-        </li>
-        
-        <li>
-          <a href="interests.html" id="border">Interests</a>
-        </li>
-
-        <li>
-          <a href="work.html" id="border">My Work</a>
-        </li>
-
-        <li>
-          <a href="feedback.html" id="border">Feedback</a>
-        </li>
-      </ul>
-    </nav>
-
-    <main>
-      <section >
-        <h1 id="center">About Me</h1>
-        <p id="center"><span id="purple">Hello, </span><span id="green">welcome to my digital portfolio. </span> This website was made with <span id="blue">HTML, CSS, and Java Script!</span> Please double-click on any section below to learn more about me, or click on any topic in the heading section to learn more about my work. Thank You for stopping by!</p>
-
-        <h2 class="plus"><span id="purple">print</span>(name)</h2>
-
-        <div class="minus">
-          <p><span id="blue">My name is Vraj Shah</span></p>
-        </div>
-
-        <h2 class="plus"><span id="purple">print</span>(school)</h2>
-        <div class="minus">
-          <p><span id="blue">I go to the <a href="https://www.osu.edu/" id="red" target="_blank">Ohio State University</a></span></p>
-        </div>
-
-        <h2 class="plus"><span id="purple">print</span>(major)</h2>
-        <div class="minus">
-          <p><span id="blue">I am currently studying Computer Science Engineering</span></p>
-        </div>
-
-        <h2 class="plus"><span id="purple">print</span>(grade)</h2>
-        <div class="minus">
-          <p><span id="blue">I am a junior in college</span></p>
-        </div>
-
-        <h2 class="plus"><span id="purple">print</span>(expectedGraduation)</h2>
-        <div class="minus">
-          <p><span id="blue">I graduate college in May 2025</span></p>
-        </div>
-
-        <h2 class="plus"><span id="purple">print</span>(email)</h2>
-        <div class="minus">
-          <p><span id="blue">My email is <a href="mailto:shahvraj26@gmail.com" id="red">shahvraj26@gmail.com</a></span></p>
-        </div>
-
-        <h2 class="plus"><span id="purple">print</span>(interests)</h2>
-        <div class="minus">
-          <p><span id="blue">Programming, Ethical Hacking, Cyber-Security, Piano, and Film Making</span></p>
-        </div>
-      </section>
-    </main>
-    
-    <footer>
-      @ 2023 by Vraj Shah.
-      <a href="https://www.linkedin.com/in/shahvraj26/" target="_blank"><img src="images/linkedln.png" alt="My Linkedln Page"></a>
-      <a href="https://github.com/shahvraj26" target="_blank"><img src="images/github.png" alt="My Github Page"></a>
-      <a href="https://twitter.com/shahvraj26/" target="_blank"><img src="images/twitter.png" alt="My Twitter Page"></a>
-      <a href="mailto:shahvraj26@gmail.com" target="_blank"><img src="images/mail.png" alt="Email Me!"></a>
-    </footer>
-
-  </body>
 </html>
