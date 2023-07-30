@@ -1,78 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>    
-    <title>| Resume</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Noto+Sans+JP&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/resume.css">
-    <script type="text/javascript" src="scripts/"></script>
-  </head>  
-  <body>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>| Home</title>
+	
+	<!--CSS Links--->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/resume.css">
+	
+	<!--boxicon links--->
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	
+	<!--remixicon links--->
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">  
+	
+	<!--Google Fonts--->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400&display=swap" rel="stylesheet">
+</head>
 
-    <header>
-      <ul>
-        <li>   
-          <a href="index.html">
-            <img src="images/logo.png" alt="Home Button" >
-          </a>
-        </li>
+<body>
+	
+	<header>
+		<a href="index.html" class="logo">shahvraj26</a>
+		
+		<ul class="navlist">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">Interests</a></li>
+			<li><a href="#">Work</a></li>
+			<li><a href="resume.html">Resume</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+		
+		<div class="bx bx-menu" id="menu-icon"></div>
+	</header> 
+	
+	<section class="hero">
+		<div class="hero-text">
+			<h1>Resume</h1>
+			<p>Please click the button below to see full resume, as there are 2 pages.</p>
+			<a target="_blank" href="college_resume.pdf" class="ctaa"><i class="ri-file-pdf-line"></i>Download Resume</a>
+		</div>
+		
+		<div class="hero-image">
+			<img src="images/collegeresume.png">
+		</div>
+	</section>
+	
+	<div class="icons">
+		<a href="#"><i class="ri-instagram-line"></i><a>
+		<a href="#"><i class="ri-linkedin-fill"></i><a>
+		<a href="#"><i class="ri-github-fill"></i><a>
+	</div>
+	
+	<!--ScrollReveal script-->
+	<script src="https://unpkg.com/scrollreveal"></script>
+	
+	<!--custom js--->
+	<script src="js/script.js"></script>
 
-        <li>
-          <a href="index.html">
-            <h1><span id="purple">print</span><span id="white">(</span><span id="green">"Vraj Shah"</span><span id="white">)</span></h1>
-          </a>
-        </li>  
-      </ul>
-    </header>  
+</body>
 
-    <nav>
-      <ul>
-        <li>
-          <a href="resume.html" id="border" class="red">Resume</a>
-        </li>
-        
-        <li>
-          <a href="interests.html" id="border">Interests</a>
-        </li>
-
-        <li>
-          <a href="work.html" id="border">My Work</a>
-        </li>
-
-        <li>
-          <a href="feedback.html" id="border">Feedback</a>
-        </li>
-      </ul>
-    </nav>
-
-    <main>
-      <section id="l">
-        <h1 id="left">College Resume</h1>
-        
-        <a href="college_resume.pdf" target="_blank">
-          <img src="images/collegeresume.png">Click Image Above to Download my College Resume
-        </a>
-      </section>
-
-      <section id="r">
-        <h1 id="right">High School Resume</h1>
-
-        <a href="resume.pdf" target="_blank">
-          <img src="images/resume.png">Click Image Above to Download my HS Resume
-        </a>
-      </section>
-    </main>
-
-    <footer>
-      @ 2022 by Vraj Shah
-      <a href="https://www.linkedin.com/in/shahvraj26/" target="_blank"><img src="images/linkedln.png" alt="My Linkedln Page"></a>
-      <a href="https://github.com/shahvraj26" target="_blank"><img src="images/github.png" alt="My Github Page"></a>
-      <a href="https://twitter.com/shahvraj26/" target="_blank"><img src="images/twitter.png" alt="My Twitter Page"></a>
-      <a href="mailto:shahvraj26@gmail.com" target="_blank"><img src="images/mail.png" alt="Email Me!"></a>
-    </footer>
-
-  </body>
 </html>
