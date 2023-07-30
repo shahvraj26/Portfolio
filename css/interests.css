@@ -142,7 +142,7 @@ section{
 	display: inline-block;
 	color: white;
 	background: black;
-	border: 1px solid transparent;
+	border: 1px solid white;
 	padding: 10px 30px;
 	margin-bottom: 20px;'
 	line-height: 1.6;
@@ -155,7 +155,7 @@ section{
 
 .hero-text a:hover{
 	background: grey;
-	border: 1px solid white;
+	border: 1px solid transparent;
 	transform: translateX(20px);
 }
 
