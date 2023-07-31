@@ -41,6 +41,7 @@ body{
 	font-size: 15px;
 	font-weight: 600;
 	border-bottom: 2px solid transparent;
+	border-radius: 10px;
 	transition: all .55s ease
 }
 
@@ -50,6 +51,7 @@ body{
 
 #colorStay{
 	color: #824945;
+	border-bottom: 2px solid transparent;
 }
 
 #menu-icon{
