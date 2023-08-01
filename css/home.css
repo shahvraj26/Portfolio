@@ -82,15 +82,33 @@ section{
 }
 
 #fontsize{
-	font-size: 25px;
+	font-size: 35px;
 }
 
 .hero-text h1{
 	font-size: 30px;
 	color: white;
+	overflow: hidden;
+	white-space: nowrap; /* Keeps the content on a single line */
 	line-height: 1;
-	margin: 0 0 45px;
+	margin: 0 auto;
+	animation: 
+		typing 4.0s steps(40, end),
+		blink-caret .75s step-end 5;
 }
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #824945 }
+}
+
 
 .hero-text p{
 	font-size: 15px;
