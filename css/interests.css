@@ -31,6 +31,11 @@ body{
 	color:white;	
 }
 
+.logo:hover{
+	transition: all .55s ease;
+	color:#824945;
+}
+
 .navlist{
 	display: flex;
 }
@@ -46,7 +51,7 @@ body{
 }
 
 .navlist a:hover{
-	border-bottom: 2px solid #824945;
+	color: #824945;
 }
 
 #colorStay{
@@ -146,7 +151,7 @@ section{
 	background: black;
 	border: 1px solid white;
 	padding: 10px 30px;
-	margin-bottom: 20px;'
+	margin-bottom: 20px;
 	line-height: 1.6;
 	font-size: 16px;
 	font-weight: 500;
