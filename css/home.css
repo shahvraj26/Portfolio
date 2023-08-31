@@ -31,6 +31,11 @@ body{
 	color:white;	
 }
 
+.logo:hover{
+	transition: all .55s ease;
+	color:#824945;
+}
+
 .navlist{
 	display: flex;
 }
@@ -42,11 +47,11 @@ body{
 	font-weight: 600;
 	border-radius: 10px;
 	border-bottom: 2px solid transparent;
-	transition: all .55s ease
+	transition: all .55s ease;
 }
 
 .navlist a:hover{
-	border-bottom: 2px solid #824945;
+	color: #824945;
 }
 
 #colorStay{
@@ -92,23 +97,7 @@ section{
 	white-space: nowrap; /* Keeps the content on a single line */
 	line-height: 1;
 	margin: 0 auto;
-	animation: 
-		typing 4.0s steps(40, end),
-		blink-caret .75s step-end 5;
 }
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #824945 }
-}
-
 
 .hero-text p{
 	font-size: 15px;
