@@ -31,7 +31,7 @@ export default function ResumePage() {
             <h1 className="text-5xl font-bold mb-4 text-center">Resume</h1>
             <Card>
             <CardHeader>
-              <CardTitle>Vraj Shahs Resume</CardTitle>
+              <CardTitle>Vraj Shah Resume</CardTitle>
             </CardHeader>
             <CardContent>
               <iframe

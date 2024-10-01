@@ -41,7 +41,7 @@ export default function Home() {
                   transition={{ duration: 0.5, delay: 0.2 }}
                 >
                   <Image
-                    src="/images/me2.png"
+                    src="/Portfolio/images/me2.png"
                     alt="Vraj Shah"
                     width={600}
                     height={600}
