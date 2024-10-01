@@ -1,5 +1,3 @@
-import { NextConfig } from 'next';
-
 const nextConfig = {
   async redirects() {
     return [

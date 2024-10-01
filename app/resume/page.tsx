@@ -35,7 +35,7 @@ export default function ResumePage() {
             </CardHeader>
             <CardContent>
               <iframe
-                src="/pdf/Shah_Resume.pdf"
+                src="/Portfolio/pdf/Shah_Resume.pdf"
                 width="100%"
                 height="600px"
                 className="border-0"
