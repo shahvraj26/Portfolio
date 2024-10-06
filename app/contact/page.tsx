@@ -24,7 +24,7 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <main className="flex-grow container mx-auto px-4 py-8 flex items-center">
+      <main className="flex-grow container mx-auto px-4 py-8 pt-28 flex items-center">
         <motion.div
           className="w-full"
           initial={{ opacity: 0, y: 20 }}
