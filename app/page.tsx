@@ -31,7 +31,7 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <Card className="overflow-hidden">
+          <Card className="overflow-hidden shadow-xl">
             <CardContent className="p-6 sm:p-8 md:p-12">
               <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
                 <motion.div
@@ -54,17 +54,13 @@ export default function Home() {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: 0.4 }}
                 >
-                  <h1 className="text-3xl md:text-4xl font-bold text-center md:text-left italic">Hey, I am Vraj Shah</h1>
-                  <p className="text-base md:text-lg text-muted-foreground text-center md:text-left">
-                  I graduated from The Ohio State University with a degree in Computer Science Engineering.                  </p>
-                  
-                  <p className="text-base md:text-lg text-muted-foreground text-center md:text-left">Beyond the world of coding, I find joy in cooking, playing the piano, golfing, and spending 
-                  quality time with friends. If you want to connect, feel free to reach out, 
-                  and dont forget to take a look at my website. 
-                  </p>
+                  <h1 className="text-3xl md:text-4xl font-bold text-center md:text-left">Hey, I am Vraj Shah</h1>
+                  <p className="text-base md:text-lg text-muted-foreground text-center leading-relaxed md:text-left text-justify">
+                  I graduated from The Ohio State University with a degree in Computer Science Engineering. Beyond the world of coding, I find joy in cooking, playing the piano, golfing, and spending 
+                  quality time with friends. If you want to connect, feel free to reach out on any of the platforms below, 
+                  and dont forget to take a look at my website. </p>
 
-                  <p className="text-base md:text-lg text-muted-foreground text-center md:text-left italic">
-                  Lets embark on this journey together! <span className="italic">Enjoy.</span></p>
+                  <p className="text-base md:text-lg text-muted-foreground text-center md:text-left leading-relaxed italic text-justify">Lets embark on this journey together! Enjoy.</p>
                   <div className="flex flex-wrap justify-center md:justify-start gap-4">
                     <Button asChild>
                       <Link href="/work">My Work</Link>
