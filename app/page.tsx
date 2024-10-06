@@ -54,15 +54,17 @@ export default function Home() {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: 0.4 }}
                 >
-                  <h1 className="text-3xl md:text-4xl font-bold text-center md:text-left italic">Hello, Im Vraj Shah</h1>
+                  <h1 className="text-3xl md:text-4xl font-bold text-center md:text-left italic">Hey, I am Vraj Shah</h1>
                   <p className="text-base md:text-lg text-muted-foreground text-center md:text-left">
-                  A senior at The Ohio State University pursuing a degree in Computer Science Engineering. 
-                  Beyond the world of coding, I find joy in exploring diverse passions such as cooking, playing the piano, 
-                  and spending quality time with friends. To get a deeper insight into my work, please check out the Work 
-                  and Skills tabs. If you want to connect, feel free to reach out, 
-                  and dont forget to take a peek at my resume. 
-                  Lets embark on this journey together! <span className="italic">Enjoy.</span>
+                  I graduated from The Ohio State University with a degree in Computer Science Engineering.                  </p>
+                  
+                  <p className="text-base md:text-lg text-muted-foreground text-center md:text-left">Beyond the world of coding, I find joy in cooking, playing the piano, golfing, and spending 
+                  quality time with friends. If you want to connect, feel free to reach out, 
+                  and dont forget to take a look at my website. 
                   </p>
+
+                  <p className="text-base md:text-lg text-muted-foreground text-center md:text-left italic">
+                  Lets embark on this journey together! <span className="italic">Enjoy.</span></p>
                   <div className="flex flex-wrap justify-center md:justify-start gap-4">
                     <Button asChild>
                       <Link href="/work">My Work</Link>

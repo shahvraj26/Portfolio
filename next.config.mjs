@@ -1,12 +1,17 @@
 const nextConfig = {
   async redirects() {
-    return [
-      {
-        source: '/',
-        destination: '/Portfolio',
-        permanent: true,
-      },
-    ];
+    // Only apply the redirect in production
+    if (process.env.NODE_ENV === 'production') {
+      return [
+        {
+          source: '/',
+          destination: '/Portfolio',
+          permanent: true,
+        },
+      ];
+    }
+    // No redirects in development
+    return [];
   },
 };
 

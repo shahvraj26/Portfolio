@@ -7,9 +7,14 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import Navbar from "@/components/Navbar"
-import { ArrowRightIcon } from "lucide-react"
+import { ArrowRightIcon, Maximize2 } from "lucide-react"
 import Footer from "@/components/Footer"
 import Image from "next/image"
+import {
+  Dialog,
+  DialogContent,
+  DialogTrigger,
+} from "@/components/ui/dialog"
 
 const currentWork = {
   title: "Research Assistant",
@@ -134,7 +139,7 @@ const projectsAndAwards = [
     link: "https://github.com/nickcheo/BlueLight_Real",
   },
   {
-    title: "Fundamentals of Engineering Robot",
+    title: "FEH Robot",
     period: "May 2022",
     description: [
       "Built/Coded a fully functioning robot using the Proteus, C++, and different Soldering techniques during a entire semester. ",
@@ -144,7 +149,7 @@ const projectsAndAwards = [
     link: "/Portfolio//pdf/report.pdf",
   },
   {
-    title: "Fundamentals of Engineering Game",
+    title: "FEH Game",
     period: "December 2021",
     description: [
       "Created a fully functional dinosaurus run game with a partner in C++",
@@ -203,9 +208,10 @@ export default function ExperiencePage() {
             </div>
           </section>
 
-          <h1 className="text-5xl font-bold mb-12 text-center">Past Work</h1>
+          <h1 className="text-5xl font-bold mb-5 text-center">Past Work</h1>
+          <h1 className="text-md mb-5 text-center text-muted-foreground italic">Click on the cards to see more information</h1>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {workExperiences.map((experience, index) => (
               <motion.div
                 key={index}
@@ -219,8 +225,34 @@ export default function ExperiencePage() {
                     <p className="text-center text-lg">{experience.company}</p>
                   </CardHeader>
                   <CardContent className="flex flex-col items-center">
-                    <Image width={300} height={300} src={experience.image || ''} alt={experience.title} className={`w-full rounded-lg shadow-md ${(experience.image.includes('mindfullogo.png') || experience.image.includes('dustin.png')) ? 'w-1/2 h-auto' : ''}`} />
-                    <div className="mt-4 flex justify-center">
+                    <div className="w-full h-48 relative overflow-hidden">
+                      <Image 
+                        src={experience.image || ''} 
+                        alt={experience.title} 
+                        layout="fill"
+                        objectFit="cover"
+                        className="rounded-lg"
+                      />
+                    </div>
+                    <div className="mt-4 flex justify-center space-x-4">
+                      <Dialog>
+                        <DialogTrigger asChild>
+                          <Button variant="outline">
+                            <Maximize2 className="w-4 h-4 mr-2" />
+                            View Full Image
+                          </Button>
+                        </DialogTrigger>
+                        <DialogContent className="max-w-3xl">
+                          <Image
+                            src={experience.image || ''}
+                            alt={experience.title}
+                            width={800}
+                            height={600}
+                            layout="responsive"
+                            objectFit="contain"
+                          />
+                        </DialogContent>
+                      </Dialog>
                       <Button asChild variant="outline">
                         <Link href={experience.link || "#"} target="_blank" rel="noopener noreferrer">
                           <span className="flex items-center">
@@ -233,15 +265,13 @@ export default function ExperiencePage() {
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: expandedIndex === index ? 'auto' : 0, opacity: expandedIndex === index ? 1 : 0 }}
                       transition={{ height: { duration: 0.3 }, opacity: { duration: 0.3 } }}
-                      className="overflow-hidden"
+                      className="overflow-hidden w-full"
                     >
                       {expandedIndex === index && (
-                        <div className="mt-4 text-md">
-                          <ul className="list-disc list-inside">
-                            {experience.description.map((item, idx) => (
-                              <li key={idx} className="mb-2">{item}</li>
-                            ))}
-                          </ul>
+                        <div className="mt-4 text-base leading-relaxed italic">
+                          <p className="text-justify">
+                            {experience.description.join(' ')}
+                          </p>
                         </div>
                       )}
                     </motion.div>
@@ -251,8 +281,10 @@ export default function ExperiencePage() {
             ))}
           </div>
 
-          <h1 className="text-5xl font-bold mt-12 mb-12 text-center">Projects & Awards</h1>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          <h1 className="text-5xl font-bold mt-12 mb-5 text-center">Projects & Awards</h1>
+          <h1 className="text-md mb-5 text-center text-muted-foreground italic">Click on the cards to see more information</h1>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {projectsAndAwards.map((project, index) => (
               <motion.div
                 key={index}
@@ -265,10 +297,34 @@ export default function ExperiencePage() {
                     <CardTitle className="text-center text-2xl">{project.title}</CardTitle>
                   </CardHeader>
                   <CardContent className="flex flex-col items-center">
-                    <Image width={300} height={300} src={project.image} alt={project.title} className={`w-full rounded-lg shadow-md ${
-                        project.image.includes('ncl.png') || project.image.includes('gymapp.png') ? 'w-1/2 h-auto' : ''
-                      }`} />
-                    <div className="mt-4 flex justify-center">
+                    <div className="w-full h-48 relative overflow-hidden">
+                      <Image 
+                        src={project.image} 
+                        alt={project.title} 
+                        layout="fill"
+                        objectFit="cover"
+                        className="rounded-lg"
+                      />
+                    </div>
+                    <div className="mt-4 flex justify-center space-x-4">
+                      <Dialog>
+                        <DialogTrigger asChild>
+                          <Button variant="outline">
+                            <Maximize2 className="w-4 h-4 mr-2" />
+                            View Full Image
+                          </Button>
+                        </DialogTrigger>
+                        <DialogContent className="max-w-3xl">
+                          <Image
+                            src={project.image || ''}
+                            alt={project.title}
+                            width={800}
+                            height={600}
+                            layout="responsive"
+                            objectFit="contain"
+                          />
+                        </DialogContent>
+                      </Dialog>
                       <Button asChild variant="outline">
                         <Link href={project.link || "#"} target="_blank" rel="noopener noreferrer">
                           <span className="flex items-center">
@@ -281,16 +337,14 @@ export default function ExperiencePage() {
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: expandedIndex === index + workExperiences.length ? 'auto' : 0, opacity: expandedIndex === index + workExperiences.length ? 1 : 0 }}
                       transition={{ height: { duration: 0.3 }, opacity: { duration: 0.3 } }}
-                      className="overflow-hidden"
+                      className="overflow-hidden w-full"
                     >
                       {expandedIndex === index + workExperiences.length && (
-                        <div className="mt-4 text-md">
-                          <ul className="list-disc list-inside">
-                            {project.description.map((item, idx) => (
-                              <li key={idx} className="mb-2">{item}</li>
-                            ))}
-                          </ul>
-                        </div>
+                        <div className="mt-4 text-base leading-relaxed italic">
+                        <p className="text-justify">
+                          {project.description.join(' ')}
+                        </p>
+                      </div>
                       )}
                     </motion.div>
                   </CardContent>
