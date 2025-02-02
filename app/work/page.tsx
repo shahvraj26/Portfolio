@@ -177,7 +177,7 @@ const ThreeDCard: React.FC<{
       className="relative p-0.5"
       onClick={() => handleCardClick(index)}
     >
-      <CardBody className="w-[26rem] h-[22rem] bg-gray-50 dark:bg-black border border-gray-200 dark:border-white/[0.2] h-auto rounded-xl p-4 sm:p-5 shadow-lg transition-all">
+      <CardBody className="bg-gray-50 dark:bg-black border border-gray-200 dark:border-white/[0.2] h-auto rounded-xl p-4 sm:p-5 shadow-lg transition-all">
         <CardItem translateZ="50" className="text-lg sm:text-xl font-bold text-neutral-600 dark:text-white mb-2 sm:mb-3">
           {experience.title}
         </CardItem>
