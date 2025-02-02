@@ -50,7 +50,7 @@ export default function Home() {
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
           <h1 className="text-5xl md:text-7xl font-extrabold text-gray-900 leading-tight drop-shadow-lg tracking-tight">
-            Hey, I'm Vraj Shah
+            Hey, I'm <span>Vraj</span>
           </h1>
 
           <p className="mt-5 text-lg md:text-xl text-gray-600 font-light leading-relaxed">

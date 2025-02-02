@@ -42,7 +42,7 @@ const workExperiences = [
   },
   {
     title: "IT Support Technician",
-    company: "Digital Union Classroom Services",
+    company: "Digital Union Classroom",
     period: "May 2024 – August 2024",
     description: [
       "Provided customer service and technical support.",
@@ -174,10 +174,10 @@ const ThreeDCard: React.FC<{
     <motion.div
       key={index}
       whileHover={{ scale: 1.05 }}
-      className="relative"
+      className="relative p-0.5"
       onClick={() => handleCardClick(index)}
     >
-      <CardBody className="bg-gray-50 dark:bg-black border border-gray-200 dark:border-white/[0.2] w-full sm:w-[28rem] h-auto rounded-xl p-5 sm:p-6 shadow-lg transition-all">
+      <CardBody className="w-[26rem] h-[22rem] bg-gray-50 dark:bg-black border border-gray-200 dark:border-white/[0.2] h-auto rounded-xl p-4 sm:p-5 shadow-lg transition-all">
         <CardItem translateZ="50" className="text-lg sm:text-xl font-bold text-neutral-600 dark:text-white mb-2 sm:mb-3">
           {experience.title}
         </CardItem>
@@ -235,18 +235,18 @@ export default function ExperiencePage() {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      <main className="container mx-auto px-4 py-6 pt-24">
+      <main className="container mx-auto px-4 py-4 pt-28">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
           {/* Current Work Section */}
-          <section className="mb-12">
-            <h1 className="text-5xl font-bold mb-6 text-center">Current Work</h1>
+          <div className="mb-8">
+            <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-center">Current Work</h1>
 
             <motion.div
-              className="bg-white p-6 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 max-w-3xl mx-auto"
+              className="bg-white p-4 sm:p-6 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 max-w-2xl mx-auto"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
@@ -283,46 +283,50 @@ export default function ExperiencePage() {
                 </Button>
               </div>
             </motion.div>
-          </section>
+          </div>
 
 
           {/* Past Work Section */}
-          <h1 className="text-5xl font-bold mb-2 text-center">Past Work</h1>
-          <h2 className="text-md mb-1 text-center text-muted-foreground italic">
-            Click on the cards to see more information
-          </h2>
+          <div className="mb-8">
+            <h1 className="text-4xl sm:text-5xl font-bold mb-2 text-center">Past Work</h1>
+            <h2 className="text-sm mb-4 text-center text-muted-foreground italic">
+              Click on the cards to see more information
+            </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            {workExperiences.map((experience, index) => (
-              <ThreeDCard 
-                key={index} 
-                experience={experience} 
-                index={index} 
-                expandedIndex={expandedIndex} 
-                handleCardClick={handleCardClick} 
-              />
-            ))}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+              {workExperiences.map((experience, index) => (
+                <ThreeDCard 
+                  key={index} 
+                  experience={experience} 
+                  index={index} 
+                  expandedIndex={expandedIndex} 
+                  handleCardClick={handleCardClick} 
+                />
+              ))}
+            </div>
           </div>
 
           {/* Projects & Awards Section */}
-          <h1 className="text-5xl font-bold mb-3 text-center">Projects & Awards</h1>
-          <h2 className="text-md mb-1 text-center text-muted-foreground italic">
-            Click on the cards to see more information
-          </h2>
+          <div className="mb-8">
+            <h1 className="text-4xl sm:text-5xl font-bold mb-2 text-center">Projects & Awards</h1>
+            <h2 className="text-sm mb-4 text-center text-muted-foreground italic">
+              Click on the cards to see more information
+            </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            {projectsAndAwards.map((project, index) => (
-              <ThreeDCard 
-                key={index} 
-                experience={project} 
-                index={index + workExperiences.length} 
-                expandedIndex={expandedIndex} 
-                handleCardClick={handleCardClick} 
-              />
-            ))}
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
+              {projectsAndAwards.map((project, index) => (
+                <ThreeDCard 
+                  key={index} 
+                  experience={project} 
+                  index={index + workExperiences.length} 
+                  expandedIndex={expandedIndex} 
+                  handleCardClick={handleCardClick} 
+                />
+              ))}
+            </div>
           </div>
           
-          <div className="mt-8 sm:mt-12 flex justify-center">
+          <div className="mt-8 sm:mt-10 flex justify-center">
             <Button asChild variant="outline">
               <Link href="/">Back to Home</Link>
             </Button>
