@@ -23,7 +23,7 @@ const currentWork = {
     "Created data visualizations with matplotlib."
   ],
   image: "/Portfolio//images/current_work.jpg",
-  link: "https://skyler-cranmer.net/research-2",
+  link: "https://skyler-cranmer.net/research-2"
 }
 
 const workExperiences = [
@@ -242,63 +242,57 @@ export default function ExperiencePage() {
           transition={{ duration: 0.5 }}
         >
           {/* Current Work Section */}
-          <section className="mb-10 sm:mb-12">
-            <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-center">Current Work</h1>
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="bg-gray-50 dark:bg-black border border-gray-200 dark:border-white/[0.2] shadow-lg rounded-xl p-6 sm:p-8 max-w-5xl mx-auto flex flex-col sm:flex-row items-center sm:items-start gap-6"
-            >
-              {/* Image on the Left */}
-              <div className="w-full sm:w-1/2 h-56 sm:h-64 relative rounded-lg overflow-hidden">
-                <Image 
-                  src={currentWork.image} 
-                  alt={currentWork.title} 
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-lg shadow-md"
-                />
-              </div>
+          <section className="mb-12">
+            <h1 className="text-5xl font-bold mb-6 text-center">Current Work</h1>
 
-              {/* Text on the Right */}
-              <div className="flex flex-col w-full sm:w-1/2">
-                <h2 className="text-2xl font-bold text-neutral-700 dark:text-white">
-                  {currentWork.title}
-                </h2>
-                <p className="text-gray-500 text-md sm:text-lg dark:text-gray-300">
-                  {currentWork.company} | {currentWork.period}
-                </p>
-                <ul className="mt-4 list-disc list-inside text-md sm:text-lg text-gray-700 dark:text-gray-300 space-y-2">
-                  {currentWork.description.map((item, index) => (
-                    <li key={index} className="flex items-start space-x-2">
-                      <span className="mt-1 text-primary-500">
-                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3a1 1 0 001 1h2a1 1 0 100-2h-1V7z" clipRule="evenodd" />
-                        </svg>
-                      </span>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-                <div className="mt-6">
-                  <Button asChild variant="outline">
-                    <Link href={currentWork.link || "#"} target="_blank" rel="noopener noreferrer">
-                      <span className="flex items-center">
-                        Learn More <ArrowRightIcon className="ml-2" />
-                      </span>
-                    </Link>
-                  </Button>
-                </div>
+            <motion.div
+              className="bg-white p-6 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 max-w-3xl mx-auto"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              whileHover={{ scale: 1.02, boxShadow: "0px 10px 30px rgba(0,0,0,0.1)" }}
+            >
+              <h3 className="text-2xl font-semibold text-center text-gray-900 dark:text-white">
+                {currentWork.title}
+              </h3>
+              <p className="text-lg text-center text-gray-600 dark:text-gray-400">{currentWork.company}</p>
+              <p className="text-sm italic text-center text-gray-500 dark:text-gray-400 mb-4">
+                {currentWork.period}
+              </p>
+
+              <ul className="mt-4 list-disc list-inside text-lg text-gray-700 dark:text-gray-300 space-y-2">
+                {currentWork.description.map((item, index) => (
+                  <li key={index} className="flex items-start space-x-2">
+                    <span className="mt-1 text-primary-500">
+                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3a1 1 0 001 1h2a1 1 0 100-2h-1V7z" clipRule="evenodd" />
+                      </svg>
+                    </span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <div className="mt-6 flex justify-center">
+                <Button asChild variant="outline">
+                  <Link href={currentWork.link || "#"} target="_blank" rel="noopener noreferrer">
+                    <span className="flex items-center">
+                      Learn More <ArrowRightIcon className="ml-2" />
+                    </span>
+                  </Link>
+                </Button>
               </div>
             </motion.div>
           </section>
 
+
           {/* Past Work Section */}
-          <h1 className="text-4xl sm:text-5xl font-bold mb-5 text-center">Past Work</h1>
-          <h2 className="text-sm sm:text-md mb-1 text-center text-muted-foreground italic">
+          <h1 className="text-5xl font-bold mb-3 text-center">Past Work</h1>
+          <h2 className="text-md mb-3 text-center text-muted-foreground italic">
             Click on the cards to see more information
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {workExperiences.map((experience, index) => (
               <ThreeDCard 
                 key={index} 
