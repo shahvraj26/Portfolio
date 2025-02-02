@@ -287,12 +287,12 @@ export default function ExperiencePage() {
 
 
           {/* Past Work Section */}
-          <h1 className="text-5xl font-bold mb-3 text-center">Past Work</h1>
-          <h2 className="text-md mb-3 text-center text-muted-foreground italic">
+          <h1 className="text-5xl font-bold mb-2 text-center">Past Work</h1>
+          <h2 className="text-md mb-1 text-center text-muted-foreground italic">
             Click on the cards to see more information
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {workExperiences.map((experience, index) => (
               <ThreeDCard 
                 key={index} 
@@ -305,12 +305,12 @@ export default function ExperiencePage() {
           </div>
 
           {/* Projects & Awards Section */}
-          <h1 className="text-4xl sm:text-5xl font-bold mt-5 sm:mt-12 mb-1 text-center">Projects & Awards</h1>
-          <h2 className="text-sm sm:text-md mb-1 text-center text-muted-foreground italic">
+          <h1 className="text-5xl font-bold mb-3 text-center">Projects & Awards</h1>
+          <h2 className="text-md mb-1 text-center text-muted-foreground italic">
             Click on the cards to see more information
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {projectsAndAwards.map((project, index) => (
               <ThreeDCard 
                 key={index} 
