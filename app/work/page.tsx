@@ -210,7 +210,7 @@ const projectsAndAwards = [
       "Robot was tasked to complete restaurant tasks on a course.",
     ],
     image: "/Portfolio/images/optimus.png",
-    link: "/Portfolio/pdf/report.pdf",
+    link: "/pdf/report.pdf",
   },
   {
     title: "FEH Game",
