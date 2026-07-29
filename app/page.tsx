@@ -25,7 +25,7 @@ export default function Home() {
     <BackgroundCode className="min-h-screen flex flex-col bg-white text-black" svgOptions={{ duration: 10 }}>
       <Navbar />
       <main className="flex-grow container mx-auto px-6 md:px-12 py-12 pt-28 flex flex-col md:flex-row items-center justify-center text-center md:text-left">
-        
+
         {/* Left Side: Image */}
         <motion.div
           className="relative flex-shrink-0 mb-6 md:mb-0 md:mr-12"
@@ -34,7 +34,7 @@ export default function Home() {
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
           <Image
-            src="images/me2.png"
+            src="/Portfolio/images/me2.png"
             alt="Vraj Shah"
             width={260}
             height={260}
@@ -50,21 +50,21 @@ export default function Home() {
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
           <h1 className="text-5xl md:text-7xl font-extrabold text-gray-900 leading-tight drop-shadow-lg tracking-tight">
-            Hey, I'm <span>Vraj</span>
+            Hey, I&apos;m <span>Vraj</span>
           </h1>
 
-          <p className="mt-5 text-lg md:text-xl text-gray-600 font-light leading-relaxed">
           <motion.p
             className="mt-6 max-w-2xl text-lg md:text-xl text-gray-700 leading-relaxed tracking-wide"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            I am a software engineer passionate about crafting <span className="text-primary font-semibold">modern, intuitive digital experiences. </span> 
-            When I am not coding, you will find me <span className="italic">cooking, editing, playing on the piano, or hanging out with friends. </span> 
+            I am a software engineer passionate about crafting{" "}
+            <span className="text-primary font-semibold">modern, intuitive digital experiences.</span>{" "}
+            When I am not coding, you will find me{" "}
+            <span className="italic">cooking, editing, playing on the piano, or hanging out with friends.</span>{" "}
             Let us connect—drop a message, explore my work, or browse through my projects.
           </motion.p>
-          </p>
 
           {/* Buttons */}
           <motion.div
@@ -82,6 +82,9 @@ export default function Home() {
             <Button asChild variant="outline" className="px-6 py-3 text-lg font-semibold rounded-full shadow-md">
               <Link href="/skills">Skills</Link>
             </Button>
+            <Button asChild variant="secondary" className="px-6 py-3 text-lg font-semibold rounded-full shadow-md">
+              <Link href="/hobbies">Hobbies</Link>
+            </Button>
           </motion.div>
 
           {/* Social Links */}
@@ -91,18 +94,18 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.5 }}
           >
-            <Button variant="ghost" size="icon">
-              <Link href="https://github.com/shahvraj26" target="_blank" rel="noopener noreferrer">
+            <Button asChild variant="ghost" size="icon">
+              <Link href="https://github.com/shahvraj26" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <GithubIcon className="h-7 w-7 text-gray-800 hover:text-blue-600 transition-colors" />
               </Link>
             </Button>
-            <Button variant="ghost" size="icon">
-              <Link href="https://www.linkedin.com/in/shahvraj26/" target="_blank" rel="noopener noreferrer">
+            <Button asChild variant="ghost" size="icon">
+              <Link href="https://www.linkedin.com/in/shahvraj26/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <LinkedinIcon className="h-7 w-7 text-blue-600 hover:text-gray-800 transition-colors" />
               </Link>
             </Button>
-            <Button variant="ghost" size="icon">
-              <Link href="mailto:shahvraj26@gmail.com" target="_blank" rel="noopener noreferrer">
+            <Button asChild variant="ghost" size="icon">
+              <Link href="mailto:shahvraj26@gmail.com" aria-label="Email">
                 <MailIcon className="h-7 w-7 text-red-500 hover:text-gray-800 transition-colors" />
               </Link>
             </Button>

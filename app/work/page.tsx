@@ -40,7 +40,7 @@ const currentWork = {
     "Architected core UDS services and a J1939 diagnostic framework for real-time fault isolation across multiple ECMs.",
   ],
   stack: ["Java", "JavaFX", "UDS", "SAE J1939"],
-  image: "/images/currentwork.png",
+  image: "/Portfolio/images/currentwork.png",
   link: "https://www.ust.com/",
 }
 
@@ -56,7 +56,7 @@ const workExperiences = [
       "Integrated RESTful micro-service APIs.",
       "Surfaced a dynamic product-recommendation UI driven by a weighted-parameter algorithm.",
     ],
-    image: "/images/hale.png",
+    image: "/Portfolio/images/hale.png",
     link: "https://www.thehale.co/",
   },
   {
@@ -70,7 +70,7 @@ const workExperiences = [
       "Designed a PostgreSQL schema cataloging 10K politicians and 1M timestamped clips.",
       "Built matplotlib dashboards; insights cited in three journal articles and two conference talks.",
     ],
-    image: "/images/cranmerresearch.png",
+    image: "/Portfolio/images/cranmerresearch.png",
     link: "https://tdai.osu.edu/people/cranmer.12",
   },
   {
@@ -84,7 +84,7 @@ const workExperiences = [
       "Secured first paying customer.",
       "Used Plaid API, Next.js, LangChain, and Supabase.",
     ],
-    image: "/images/dustin.png",
+    image: "/Portfolio/images/dustin.png",
     link: "https://dustinhq.com/",
   },
   {
@@ -97,7 +97,7 @@ const workExperiences = [
       "Assisted with instructional technology and AV systems.",
       "Performed daily maintenance and troubleshooting.",
     ],
-    image: "/images/digital.png",
+    image: "/Portfolio/images/digital.png",
     link: "https://u.osu.edu/workatclassroomservices/",
   },
   {
@@ -110,7 +110,7 @@ const workExperiences = [
       "Used NextJS, SQL, Mux, Tailwind, and Prisma.",
       "Secured $1500 in startup funding.",
     ],
-    image: "/images/mindfullogo.png",
+    image: "/Portfolio/images/mindfullogo.png",
     link: "https://youtu.be/VWrgPNY8TFU?si=XkLadUAlyCOHYFQO",
   },
   {
@@ -122,7 +122,7 @@ const workExperiences = [
       "Optimized NOWLAB website with HTML/CSS.",
       "Configured network protocols for lab hardware.",
     ],
-    image: "/images/nowlab.png",
+    image: "/Portfolio/images/nowlab.png",
     link: "https://nowlab.cse.ohio-state.edu/",
   },
   {
@@ -133,7 +133,7 @@ const workExperiences = [
     description: [
       "Created a script to extract hidden images from search engines to check for incriminating data used by hackers or spies.",
     ],
-    image: "/images/packetwars.png",
+    image: "/Portfolio/images/packetwars.png",
     link: "https://www.packetwars.com/",
   },
 ]
@@ -148,7 +148,7 @@ const projectsAndAwards = [
       "Skills: log analysis, binary exploitation, OSINT, cryptography.",
       "Earned a Platinum award (top 100 of 5,380 collegiate competitors nationwide).",
     ],
-    image: "/images/ncl.png",
+    image: "/Portfolio/images/ncl.png",
     link: "https://nationalcyberleague.org/competition",
   },
   {
@@ -161,7 +161,7 @@ const projectsAndAwards = [
       "Next.js front-end to identify structural vulnerabilities and locate survivors.",
       "Won 1st place in the Making Waves track.",
     ],
-    image: "/images/tartanhacks.jpeg",
+    image: "/Portfolio/images/tartanhacks.jpeg",
   },
   {
     title: "Gym Data Tracking App",
@@ -172,7 +172,7 @@ const projectsAndAwards = [
       "Used React Native and Selenium.",
       "Submitted to Apple App Store.",
     ],
-    image: "/images/gymapp.png",
+    image: "/Portfolio/images/gymapp.png",
     link: "https://github.com/shahvraj26/MyReactNative",
   },
   {
@@ -186,7 +186,7 @@ const projectsAndAwards = [
       "Implemented audio level detector for gunshot detection.",
       "Secured 2nd place out of 100 teams.",
     ],
-    image: "/images/Makethon.png",
+    image: "/Portfolio/images/Makethon.png",
     link: "https://github.com/krishsanghvi/MakeOhio2024",
   },
   {
@@ -198,7 +198,7 @@ const projectsAndAwards = [
       "Identified nearest emergency blue light.",
       "Secured 2nd place out of 200 teams.",
     ],
-    image: "/images/Hackathon.png",
+    image: "/Portfolio/images/Hackathon.png",
     link: "https://github.com/nickcheo/BlueLight_Real",
   },
   {
@@ -209,8 +209,8 @@ const projectsAndAwards = [
       "Built/coded a fully functioning robot using Proteus, C++, and various soldering techniques over an entire semester.",
       "Robot was tasked to complete restaurant tasks on a course.",
     ],
-    image: "/images/optimus.png",
-    link: "/pdf/report.pdf",
+    image: "/Portfolio/images/optimus.png",
+    link: "/Portfolio/pdf/report.pdf",
   },
   {
     title: "FEH Game",
@@ -220,7 +220,7 @@ const projectsAndAwards = [
       "Created a fully functional dinosaur run game with a partner in C++.",
       "(a parody of the offline dinosaur game, but with a twist).",
     ],
-    image: "/images/game.png",
+    image: "/Portfolio/images/game.png",
     link: "https://github.com/shahvraj26/dinosaurgame/blob/main/main.cpp",
   },
   {
@@ -231,7 +231,7 @@ const projectsAndAwards = [
       "Oracle-certified Java Foundations (1Z0-811).",
       "Covers core Java syntax, OOP concepts, data structures, and program flow.",
     ],
-    image: "/images/java.png",
+    image: "/Portfolio/images/java.png",
     link: "https://www.oracle.com/education/certification/",
   },
 ]
