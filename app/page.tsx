@@ -34,7 +34,7 @@ export default function Home() {
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
           <Image
-            src="/Portfolio/images/me2.png"
+            src="images/me2.png"
             alt="Vraj Shah"
             width={260}
             height={260}
@@ -61,7 +61,7 @@ export default function Home() {
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
             I am a software engineer passionate about crafting <span className="text-primary font-semibold">modern, intuitive digital experiences. </span> 
-            When I am not coding, you will find me <span className="italic">cooking, playing on the piano, or hanging out with friends. </span> 
+            When I am not coding, you will find me <span className="italic">cooking, editing, playing on the piano, or hanging out with friends. </span> 
             Let us connect—drop a message, explore my work, or browse through my projects.
           </motion.p>
           </p>

@@ -1,18 +1,13 @@
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
-  async redirects() {
-    // Only apply the redirect in production
-    if (process.env.NODE_ENV === 'production') {
-      return [
-        {
-          source: '/',
-          destination: '/Portfolio',
-          permanent: true,
-        },
-      ];
-    }
-    // No redirects in development
-    return [];
+  output: 'export',
+  basePath: isProd ? '/Portfolio' : '',
+  assetPrefix: isProd ? '/Portfolio' : '',
+  images: {
+    unoptimized: true,
   },
+  trailingSlash: true,
 };
 
 export default nextConfig;

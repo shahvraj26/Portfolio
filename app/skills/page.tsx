@@ -5,8 +5,8 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 import Navbar from "@/components/Navbar"
-import { Binary, Move3D, BookOpenText, Globe, Earth, MessageCircleCode, SquarePlay, MapPinCheckInside, FileChartLine } from "lucide-react"
-import { JavaOriginal, AzuresqldatabaseOriginal, PythonOriginal, FigmaOriginal, VisualstudioPlain, TypescriptOriginal, GitPlain, BashOriginal, Css3Plain, Html5Plain, ReactOriginal, UbuntuOriginal, JavascriptOriginal, OpencvOriginal, TailwindcssOriginal, CplusplusPlain, CLine } from 'devicons-react';
+import { Binary, Move3D, BookOpenText, Globe, Earth, MessageCircleCode, SquarePlay, MapPinCheckInside, FileChartLine, Network, AudioLines, Brain, Boxes, Cpu, Link2, Landmark, AppWindow, Workflow } from "lucide-react"
+import { JavaOriginal, AzuresqldatabaseOriginal, PythonOriginal, FigmaOriginal, VisualstudioPlain, TypescriptOriginal, GitPlain, BashOriginal, Css3Plain, Html5Plain, ReactOriginal, UbuntuOriginal, JavascriptOriginal, OpencvOriginal, TailwindcssOriginal, CplusplusPlain, CLine, PhotoshopPlain, PremiereproPlain, PostgresqlPlain, SupabaseOriginal, MavenOriginal, MatplotlibPlain } from 'devicons-react';
 import Footer from "@/components/Footer"
 
 const programmingLanguages = [
@@ -42,6 +42,21 @@ const otherSkills = [
   { name: "OpenCV", icon: <OpencvOriginal />, level: 65 },
   { name: "Tailwind CSS", icon: <TailwindcssOriginal />, level: 80 },
   { name: "Mux", icon: <SquarePlay className="h-4 w-4" />, level: 50 },
+  { name: "PostgreSQL", icon: <PostgresqlPlain />, level: 75 },
+  { name: "Supabase", icon: <SupabaseOriginal />, level: 70 },
+  { name: "Maven", icon: <MavenOriginal />, level: 70 },
+  { name: "matplotlib", icon: <MatplotlibPlain />, level: 75 },
+  { name: "JavaFX", icon: <AppWindow className="h-4 w-4" />, level: 75 },
+  { name: "REST APIs", icon: <Network className="h-4 w-4" />, level: 85 },
+  { name: "LangChain", icon: <Link2 className="h-4 w-4" />, level: 70 },
+  { name: "Plaid API", icon: <Landmark className="h-4 w-4" />, level: 65 },
+  { name: "WhisperX", icon: <AudioLines className="h-4 w-4" />, level: 70 },
+  { name: "NLP", icon: <Brain className="h-4 w-4" />, level: 75 },
+  { name: "COLMAP", icon: <Boxes className="h-4 w-4" />, level: 60 },
+  { name: "CUDA", icon: <Cpu className="h-4 w-4" />, level: 60 },
+  { name: "SDLC", icon: <Workflow className="h-4 w-4" />, level: 80 },
+  { name: "Adobe Photoshop", icon: <PhotoshopPlain />, level: 70 },
+  { name: "Adobe Premiere Pro", icon: <PremiereproPlain />, level: 70 },
 ]
 
 export default function SkillsPage() {

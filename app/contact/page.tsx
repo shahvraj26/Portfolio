@@ -79,7 +79,7 @@ export default function ContactPage() {
                 >
                 <div className="w-full max-w-md"> {/* Adjust max-w-md as needed */}
                   <Image
-                    src="/Portfolio//images/me3.png"
+                    src="/images/me3.png"
                     alt="Vraj Shah"
                     width={400}
                     height={400}
