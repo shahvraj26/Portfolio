@@ -397,7 +397,7 @@ function VaathiBanner() {
         <div className="flex flex-col items-center gap-5 p-5 text-center sm:p-8 md:flex-row md:gap-8 md:text-left">
           <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-xl bg-gray-100 dark:bg-neutral-800">
             <Image
-              src="/images/hobbies/vaathi.jpg"
+              src="/Portfolio/images/hobbies/vaathi.jpg"
               alt="Vaathi Productions"
               fill
               sizes="80px"
