@@ -33,16 +33,16 @@ const Navbar = () => {
     <>
       {/* Main Navbar */}
       <motion.nav
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
+        initial={{ opacity: 0, y: 0 }}
+        animate={{ opacity: 2, y: 0 }}
+        transition={{ duration: 0, ease: "easeOut" }}
         className={`fixed top-5 left-0 right-0 mx-auto z-50 flex justify-center transition-all duration-500 ease-in-out ${
           isScrolled ? "w-[65%] shadow-md scale-95" : "w-[70%]"
         }`}
       >
         <motion.div
-          initial={{ opacity: 0, y: -30 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 0 }}
+          animate={{ opacity: 2, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
           className="bg-background/80 backdrop-blur-lg rounded-full shadow-lg w-full max-w-3xl px-6"
         >
